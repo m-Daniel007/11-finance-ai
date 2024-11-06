@@ -1,5 +1,7 @@
+import { Button } from "./_components/ui/button";
+
 const Home = () => {
-  return <h1 className="flex justify-center px-8 py-5 text-amber-600">Home</h1>;
+  return <Button className="flex justify-center px-5 ">Hello</Button>;
 };
 
 export default Home;
