@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres:alpine
+    container_name: postgres_db
+    ports:
+     - '6543:5432'
+    environment:
+      POSTGRES_DB: finance_ai
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./data:/var/lib/postgresql/data
